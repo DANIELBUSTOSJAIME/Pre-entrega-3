@@ -2,47 +2,59 @@ header{
     .logito{
         text-align: center;
         animation: logo 2s ease;
-        .logo{
-            width: 150px;
+    }
+    @keyframes logo {
+        0% {
+            opacity: 0;
         }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .logo{
+        width: 150px;
     }
     h1{
         color: $color-letra-h1;
         font-size: 3rem;
         font-weight: bold;
         text-align: center;
-        font-family: 'Lobster', cursive;   
-        #tit1{
-            animation: tituloprincipal 4s ease;
-            @keyframes tituloprincipal {
-                0% {
-                opacity: 0;}
-                50% {
-                opacity: 0.5;}
-                100% {
-                opacity: 1;}
-            }
-        }
+        font-family: 'Lobster', cursive;
+    }   
+    #tit1{
+        animation: tituloprincipal 4s ease;
+    }
+    @keyframes tituloprincipal {
+            0% {
+            opacity: 0;}
+            50% {
+            opacity: 0.5;}
+            100% {
+            opacity: 1;}
     }
     h2{text-align: center ;
         font-size: 2rem;
         font-style: italic;
         color: $color-letra-h2;
         font-family: 'Fira Sans Extra Condensed', sans-serif;
-        #tit2{
-            animation: titulosecundario 6s ease;
-            @keyframes titulosecundario {
-                0%{
-                    opacity: 0;
-                }
-                50% {
-                opacity: 0.5}
-                100%{
-                    opacity: 1;
-                }
-            }
+    }
+    #tit2{
+        animation: titulosecundario 6s ease;
+    }
+    @keyframes titulosecundario {
+        0%{
+            opacity: 0;
         }
-    } 
+        50% {
+            opacity: 0.5
+        }
+        100%{
+            opacity: 1;
+        }
+    }
     .navbar{
         background-color: $color-navbar-titulos;
         padding: 2%;
@@ -50,7 +62,7 @@ header{
         font-family: 'Fira Sans Extra Condensed', sans-serif;
         li a{
             &:hover{
-                background-color: $color-navbar-hover;
+                background-color: $color-navbar-hover-subtitulos;
                 border-radius: 80%;
             }
         }

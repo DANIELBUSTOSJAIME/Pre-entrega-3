@@ -1,0 +1,57 @@
+main{
+    h3{
+        font-size: 2rem;
+        font-family: 'Lobster', cursive;
+        width: 40%;
+        color: $color-letra-h3;
+        text-decoration: underline;
+    }
+    #titulo2{    
+        width: fit-content;
+        background-color: $color-navbar-titulos;
+        margin: 10 auto;
+        text-align: center;
+    }
+    .obras{
+        margin: 0 auto;
+        border: solid black 2px;
+        text-align: center;
+        align-content: center;
+        background-color: $color-navbar-titulos;
+    }
+    h4{
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        padding: 1rem;
+    }
+    .titulos{
+    margin: 1rem;
+    background-color: $color-navbar-hover-subtitulos;
+    text-align: center;
+    }
+    p{
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+    }
+    .imagenchica{
+            width: 250px;
+            height: 250px;
+            padding: 3rem;
+            align-items: center;
+            &:hover{
+                transform: scale(1.5,1.5);
+                transition: all 2s;
+            }
+    }
+    .botonarriba{
+        width: 80px;
+        padding: 5px;
+        background-color: beige;
+        margin: 5px ;
+        font-weight: bold;
+        bottom: 50px;
+        left: 5px;
+        text-decoration: none;
+        color: $color-botonarriba;
+    }
+}

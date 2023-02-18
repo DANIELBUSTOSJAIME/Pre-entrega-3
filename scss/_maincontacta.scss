@@ -1,0 +1,43 @@
+main{
+    h3{
+        font-size: 2rem;
+        font-family: 'Lobster', cursive;
+        width: 40%;
+        color: $color-letra-h3;
+        text-decoration: underline;
+    }
+    #contactanos{
+        width: fit-content;
+        background-color: $color-navbar-titulos;
+        margin: 10 auto;
+        text-align: center;
+    }
+    #formulario{
+        width: 28rem;
+        height: 38rem;
+        background-color: $color-navbar-hover-subtitulos; 
+        padding: 0.8rem;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;    
+        margin: 0.5cm;
+        .lineas{
+            display: block;
+            padding: 5px;
+            width: 400 ;
+            text-align: justify;
+        }
+    }
+    #mapa{
+        margin: 0.5cm;
+    }
+    .botonarriba{
+        width: 80px;
+        padding: 5px;
+        background-color: beige;
+        margin: 5px ;
+        font-weight: bold;
+        bottom: 50px;
+        left: 5px;
+        text-decoration: none;
+        color: $color-botonarriba;
+    } 
+}

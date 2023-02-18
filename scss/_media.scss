@@ -1,41 +1,19 @@
 @media screen and (max-width: 768px){
-    .conteinerr{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 2fr 1fr; 
-        grid-template-areas: 
-        "top"
-        "nav"
-        "portadas"
-        "footerr"
-    }
-    .menu li {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .portadas{
-        grid-area: portadas;
-        text-align: center;
-    } 
-    .imggrande{
-        height: 250px;
-        width: 250px;
-        margin: 5px;
-    }
-    #contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #mapa{
-        margin-top: 2cm;
-    }
-    .imggrande:hover{
-        transform: scale(2,2);
-        transition: all 2s;
-    }
-    .lineas{
-        width: 350;
+    main{
+        .imggrande{
+            height: 250px;
+            width: 250px;
+            margin: 5px;
+            &:hover{
+                transform: scale(2,2);
+                transition: all 2s;
+            }
+        }   
+        #mapa{
+            margin-top: 2cm;
+        }
+        .lineas{
+            width: 350;
+        }
     }
 }

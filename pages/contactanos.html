@@ -2,9 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="descripcion" content="En esta página podes contactarte con nuestros y saber cual es nuestra dirección y telefono">
+    <meta name="keywords" content="Contactanos, Dirección, Telefonos, Ubicación, Mapa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo.css">
-    <title>Construcciones Maldonado</title>
+    <title>Construcciones Maldonado | Contactanos</title>
     <link rel="shortcut icon" href="../img/logo.jpeg" type="Logo" class="logo">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,29 +54,32 @@
   </header>
   <main>
     <h3 id="contactanos">Contactanos</h3>
-    <section id="contacto">
-      <div>
-        <FIeldset id="formulario">
-        <LEgend>Ingresa tus datos</LEgend>
-          <form action="form" >
-            <label class="lineas" for="nombre">Nombre y Apellido</label>
-            <input class="lineas" type="text" id="nombre" placeholder="Ingresa tu nombre completo">
-            <label class="lineas" for="telefono">Telefono</label>
-            <input class="lineas" type="tel" name="telefono" id="telefono" placeholder="Ingresa tu telefono sin el 0 y el 15">
-            <label class="lineas" for="correo">Correo Electronico</label>
-            <input class="lineas" type="email" name="correo" id="correo" maxlength="10" placeholder="Ingresa tu casilla de email">
-            <label class="lineas" for="mensaje">Dejanos tu mensaje</label>
-            <textarea class="lineas" name="mensaje" id="mensaje" cols="20" rows="10"></textarea>
-            <input type="submit" value="Enviar Formulario">
-            <input type="reset" value="Limpiar Formulario">
-          </form>
-        </FIeldset>
-      </div>
-      <div id="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.5664392307776!2d-64.25241640771885!3d-31.34334471502771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ea8568c2001%3A0x6049856fd14868f5!2zQXYuIFJhZmFlbCBOw7rDsWV6IDYzMTQsIFg1MDIxIEPDs3Jkb2Jh!5e0!3m2!1ses!2sar!4v1673700804789!5m2!1ses!2sar" width="400" height="595" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="conteiner">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-1">
+          <fieldset id="formulario">
+            <legend>Ingresa tus datos</legend>
+            <form action="form" >
+              <label class="lineas" for="nombre">Nombre y Apellido</label>
+              <input class="lineas" type="text" id="nombre" placeholder="Ingresa tu nombre completo">
+              <label class="lineas" for="telefono">Telefono</label>
+              <input class="lineas" type="tel" name="telefono" id="telefono" placeholder="Ingresa tu telefono sin el 0 y el 15">
+              <label class="lineas" for="correo">Correo Electronico</label>
+              <input class="lineas" type="email" name="correo" id="correo" maxlength="10" placeholder="Ingresa tu casilla de email">
+              <label class="lineas" for="mensaje">Dejanos tu mensaje</label>
+              <textarea class="lineas" name="mensaje" id="mensaje" cols="20" rows="10"></textarea>
+              <input type="submit" value="Enviar Formulario">
+              <input type="reset" value="Limpiar Formulario">
+            </form>
+          </fieldset>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-1"> 
+          <div id="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.5664392307776!2d-64.25241640771885!3d-31.34334471502771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ea8568c2001%3A0x6049856fd14868f5!2zQXYuIFJhZmFlbCBOw7rDsWV6IDYzMTQsIFg1MDIxIEPDs3Jkb2Jh!5e0!3m2!1ses!2sar!4v1673700804789!5m2!1ses!2sar" width="450" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div> 
+        </div> 
       </div>
     </section>
-    <div class="botonarriba"><a href="#arriba">Ir arriba</a>
-    </div>
+    <a class="botonarriba" href="#arriba">Ir arriba</a>
   </main>
   <footer>
     <section class="foot">
