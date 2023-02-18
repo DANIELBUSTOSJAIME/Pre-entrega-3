@@ -1,0 +1,29 @@
+main{
+    .portadas{
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        .imagengrande{ 
+                height: 450px;
+                width: 450px;
+                margin: 20px;
+                &:hover{
+                    transform: scale(1.2,1.2);
+                    transition: all 2s;
+                }
+        }
+    }
+    .botonarriba{
+        width: 80px;
+        padding: 5px;
+        background-color: beige;
+        margin: 5px ;
+        border: 25px black;
+        font-weight: bold;
+        bottom: 50px;
+        left: 5px;
+        text-decoration: none;
+        color: $color-botonarriba;
+    }   
+}
