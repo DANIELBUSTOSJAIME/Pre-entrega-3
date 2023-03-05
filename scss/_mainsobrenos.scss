@@ -9,13 +9,17 @@ main{
         font-family: 'Lobster', cursive;
         width: 40%;
         color: $color-letra-h3;
-        text-decoration: underline;
+        border-radius: 90%;
+        text-decoration: none;
     }
     #somos {
             width: fit-content;
             background-color: $color-navbar-titulos;
             margin: 10 auto;
             text-align: center;
+    .video{
+        width: 900px;
+    }
     }
     #aboutus{
         width: 55% ;
@@ -28,7 +32,7 @@ main{
     }
     .botonarriba{
         width: 80px;
-        padding: 5px;
+        padding: 10px;
         background-color: beige;
         margin: 5px ;
         font-weight: bold;
@@ -36,5 +40,6 @@ main{
         left: 5px;
         text-decoration: none;
         color: $color-botonarriba;
+        border-radius: 90%;
     }
 } 

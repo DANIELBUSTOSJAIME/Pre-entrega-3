@@ -1,7 +1,7 @@
 header{
     .logito{
         text-align: center;
-        animation: logo 2s ease;
+        animation: logo 1s ease;
     }
     @keyframes logo {
         0% {
@@ -25,7 +25,7 @@ header{
         font-family: 'Lobster', cursive;
     }   
     #tit1{
-        animation: tituloprincipal 4s ease;
+        animation: tituloprincipal 1.5s ease;
     }
     @keyframes tituloprincipal {
             0% {
@@ -42,7 +42,7 @@ header{
         font-family: 'Fira Sans Extra Condensed', sans-serif;
     }
     #tit2{
-        animation: titulosecundario 6s ease;
+        animation: titulosecundario 2s ease;
     }
     @keyframes titulosecundario {
         0%{
@@ -65,6 +65,11 @@ header{
                 background-color: $color-navbar-hover-subtitulos;
                 border-radius: 80%;
             }
+        }
+        .bg{
+            background-color: $color-navbar-titulos;
+            border-color: black
+            black;
         }
     }
 }

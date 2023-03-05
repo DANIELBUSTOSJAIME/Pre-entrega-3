@@ -1,19 +1,113 @@
-@media screen and (max-width: 768px){
-    main{
-        .imggrande{
-            height: 250px;
-            width: 250px;
-            margin: 5px;
-            &:hover{
-                transform: scale(2,2);
-                transition: all 2s;
+@media screen and (max-width: 968px)and (min-width:351px){
+    header{
+        .navbar{
+            li a{
+                &:hover{
+                    border-radius: 0%;
+                }
             }
-        }   
-        #mapa{
-            margin-top: 2cm;
         }
-        .lineas{
-            width: 350;
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }  
+    }
+    main{
+        .portadas{
+            justify-content:space-around;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            .imagengrande{ 
+                    height: 80%;
+                    width: 80%;
+                    margin: 20px;
+                    border-radius: 5%;
+                    &:hover{
+                        transform: scale(1.2,1.2);
+                        transition: all 2s;
+                        border-radius: 0%;
+                    }
+            }
+        }
+        .sobrenosotros{
+            display: flex;
+            flex-direction: column;
+            .video{
+                width: 350px;
+            }
+        }
+        #formulario{
+            width: 95%;
+            justify-self: center;
+            .lineas{                
+                width: 95% ;
+            }
+        }
+        .mapa{
+            width: 95%;
+        }
+    }
+}
+@media screen and (max-width: 350px){
+    header{
+        .navbar{
+            li a{
+                &:hover{
+                    border-radius: 0%;
+                }
+            }
+        }
+        h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1rem;
+        }   
+    }
+    main{
+        .portadas{
+            justify-content:space-around;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            .imagengrande{ 
+                    height: 80%;
+                    width: 80%;
+                    margin: 10px;
+                    border-radius: 5%;
+                    &:hover{
+                        transform: scale(1.2,1.2);
+                        transition: all 2s;
+                        border-radius: 0%;
+                    }
+            }
+        }
+        .sobrenosotros{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .video{
+                width: 200px;
+            }
+        }
+        #contactanos{
+            width: fit-content;
+            background-color: $color-navbar-titulos;
+            margin: 10 auto;
+            text-align: center;
+        }
+        #formulario{
+            width: 95%;
+            justify-self: center;
+            .lineas{                
+                width: 95% ;
+            }
+        }
+        .mapa{
+            width: 95%;
         }
     }
 }

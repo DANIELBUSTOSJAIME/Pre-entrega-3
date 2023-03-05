@@ -4,7 +4,8 @@ main{
         font-family: 'Lobster', cursive;
         width: 40%;
         color: $color-letra-h3;
-        text-decoration: underline;
+        border-radius: 90%;
+        text-decoration: none;
     }
     #contactanos{
         width: fit-content;
@@ -13,7 +14,7 @@ main{
         text-align: center;
     }
     #formulario{
-        width: 28rem;
+        width: 90%;
         height: 38rem;
         background-color: $color-navbar-hover-subtitulos; 
         padding: 0.8rem;
@@ -22,11 +23,13 @@ main{
         .lineas{
             display: block;
             padding: 5px;
-            width: 400 ;
+            width: 90% ;
             text-align: justify;
         }
     }
-    #mapa{
+    .mapa{
+        width: 95%;
+        height: 610px;
         margin: 0.5cm;
     }
     .botonarriba{
@@ -39,5 +42,6 @@ main{
         left: 5px;
         text-decoration: none;
         color: $color-botonarriba;
+        border-radius: 90%;
     } 
 }

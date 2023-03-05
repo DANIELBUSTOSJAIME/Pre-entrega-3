@@ -18,7 +18,7 @@ body {
 
 header .logito {
   text-align: center;
-  animation: logo 2s ease; }
+  animation: logo 1s ease; }
 
 @keyframes logo {
   0% {
@@ -39,7 +39,7 @@ header h1 {
   font-family: 'Lobster', cursive; }
 
 header #tit1 {
-  animation: tituloprincipal 4s ease; }
+  animation: tituloprincipal 1.5s ease; }
 
 @keyframes tituloprincipal {
   0% {
@@ -57,7 +57,7 @@ header h2 {
   font-family: 'Fira Sans Extra Condensed', sans-serif; }
 
 header #tit2 {
-  animation: titulosecundario 6s ease; }
+  animation: titulosecundario 2s ease; }
 
 @keyframes titulosecundario {
   0% {
@@ -75,6 +75,9 @@ header .navbar {
   header .navbar li a:hover {
     background-color: #db8f2c;
     border-radius: 80%; }
+  header .navbar .bg {
+    background-color: rgba(255, 196, 0, 0.726);
+    border-color: black black; }
 
 main .portadas {
   justify-content: center;
@@ -82,23 +85,26 @@ main .portadas {
   display: flex;
   flex-wrap: wrap; }
   main .portadas .imagengrande {
-    height: 450px;
-    width: 450px;
-    margin: 20px; }
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 5%; }
     main .portadas .imagengrande:hover {
       transform: scale(1.2, 1.2);
-      transition: all 2s; }
+      transition: all 2s;
+      border-radius: 0%; }
 
 main .botonarriba {
   width: 80px;
-  padding: 5px;
+  padding: 10px;
   background-color: beige;
   margin: 5px;
   font-weight: bold;
   bottom: 50px;
   left: 5px;
   text-decoration: none;
-  color: #c98724; }
+  color: #c98724;
+  border-radius: 90%; }
 
 main .sobrenosotros {
   display: flex;
@@ -110,13 +116,16 @@ main h3 {
   font-family: 'Lobster', cursive;
   width: 40%;
   color: #856613;
-  text-decoration: underline; }
+  border-radius: 90%;
+  text-decoration: none; }
 
 main #somos {
   width: fit-content;
   background-color: rgba(255, 196, 0, 0.726);
   margin: 10 auto;
   text-align: center; }
+  main #somos .video {
+    width: 900px; }
 
 main #aboutus {
   width: 55%;
@@ -128,21 +137,23 @@ main #aboutus {
 
 main .botonarriba {
   width: 80px;
-  padding: 5px;
+  padding: 10px;
   background-color: beige;
   margin: 5px;
   font-weight: bold;
   bottom: 50px;
   left: 5px;
   text-decoration: none;
-  color: #c98724; }
+  color: #c98724;
+  border-radius: 90%; }
 
 main h3 {
   font-size: 2rem;
   font-family: 'Lobster', cursive;
   width: 40%;
   color: #856613;
-  text-decoration: underline; }
+  border-radius: 90%;
+  text-decoration: none; }
 
 main #titulo1 {
   width: fit-content;
@@ -194,14 +205,16 @@ main .botonarriba {
   bottom: 50px;
   left: 5px;
   text-decoration: none;
-  color: #c98724; }
+  color: #c98724;
+  border-radius: 90%; }
 
 main h3 {
   font-size: 2rem;
   font-family: 'Lobster', cursive;
   width: 40%;
   color: #856613;
-  text-decoration: underline; }
+  border-radius: 90%;
+  text-decoration: none; }
 
 main #titulo2 {
   width: fit-content;
@@ -248,14 +261,16 @@ main .botonarriba {
   bottom: 50px;
   left: 5px;
   text-decoration: none;
-  color: #c98724; }
+  color: #c98724;
+  border-radius: 90%; }
 
 main h3 {
   font-size: 2rem;
   font-family: 'Lobster', cursive;
   width: 40%;
   color: #856613;
-  text-decoration: underline; }
+  border-radius: 90%;
+  text-decoration: none; }
 
 main #contactanos {
   width: fit-content;
@@ -264,7 +279,7 @@ main #contactanos {
   text-align: center; }
 
 main #formulario {
-  width: 28rem;
+  width: 90%;
   height: 38rem;
   background-color: #db8f2c;
   padding: 0.8rem;
@@ -273,10 +288,12 @@ main #formulario {
   main #formulario .lineas {
     display: block;
     padding: 5px;
-    width: 400;
+    width: 90%;
     text-align: justify; }
 
-main #mapa {
+main .mapa {
+  width: 95%;
+  height: 610px;
   margin: 0.5cm; }
 
 main .botonarriba {
@@ -288,7 +305,8 @@ main .botonarriba {
   bottom: 50px;
   left: 5px;
   text-decoration: none;
-  color: #c98724; }
+  color: #c98724;
+  border-radius: 90%; }
 
 footer {
   background-color: rgba(184, 147, 25, 0.534);
@@ -305,6 +323,8 @@ section .direcciontelefono {
   width: 200;
   text-align: center;
   margin: 10mp; }
+  section .direcciontelefono .wsp {
+    width: 30; }
   section .direcciontelefono p {
     font-family: 'Fira Sans Extra Condensed', sans-serif; }
 
@@ -319,15 +339,76 @@ section .redessolciales {
   #copy p {
     font-family: 'Fira Sans Extra Condensed', sans-serif; }
 
-@media screen and (max-width: 768px) {
-  main .imggrande {
-    height: 250px;
-    width: 250px;
-    margin: 5px; }
-    main .imggrande:hover {
-      transform: scale(2, 2);
-      transition: all 2s; }
-  main #mapa {
-    margin-top: 2cm; }
-  main .lineas {
-    width: 350; } }
+@media screen and (max-width: 968px) and (min-width: 351px) {
+  header .navbar li a:hover {
+    border-radius: 0%; }
+  header h1 {
+    font-size: 2.5rem; }
+  header h2 {
+    font-size: 1.5rem; }
+  main .portadas {
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; }
+    main .portadas .imagengrande {
+      height: 80%;
+      width: 80%;
+      margin: 20px;
+      border-radius: 5%; }
+      main .portadas .imagengrande:hover {
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+        border-radius: 0%; }
+  main .sobrenosotros {
+    display: flex;
+    flex-direction: column; }
+    main .sobrenosotros .video {
+      width: 350px; }
+  main #formulario {
+    width: 95%;
+    justify-self: center; }
+    main #formulario .lineas {
+      width: 95%; }
+  main .mapa {
+    width: 95%; } }
+
+@media screen and (max-width: 350px) {
+  header .navbar li a:hover {
+    border-radius: 0%; }
+  header h1 {
+    font-size: 2rem; }
+  header h2 {
+    font-size: 1rem; }
+  main .portadas {
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; }
+    main .portadas .imagengrande {
+      height: 80%;
+      width: 80%;
+      margin: 10px;
+      border-radius: 5%; }
+      main .portadas .imagengrande:hover {
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+        border-radius: 0%; }
+  main .sobrenosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .sobrenosotros .video {
+      width: 200px; }
+  main #contactanos {
+    width: fit-content;
+    background-color: rgba(255, 196, 0, 0.726);
+    margin: 10 auto;
+    text-align: center; }
+  main #formulario {
+    width: 95%;
+    justify-self: center; }
+    main #formulario .lineas {
+      width: 95%; }
+  main .mapa {
+    width: 95%; } }
